@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #f7fdff;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.container{
+    position: relative;
+    background: white;
+    border: 1px hidden #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(179, 179, 179, 0.2), 0 6px 8px 0 rgba(181, 180, 180, 0.19);
+    width: 700px;
+}
+.labels{
+    padding-left: 5%;
+    font-size: 18px;
+}
+
+.uname{
+    margin-top: 30px;
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-left: 108px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.newPassword{
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-left: 53px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.cnfPassword{
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left:20px ;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+button{
+    width:200px;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
