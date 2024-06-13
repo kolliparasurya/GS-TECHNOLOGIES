@@ -1,0 +1,131 @@
+GPU CHIPS         
+---------            clock speeds         render_config
+1 chip_id P          ------------         -------------
+2 chip name          1 chip_id  P F        1 chip_id   P  F
+3 stage              2 base_clock         2 shading_units
+4 application        3 memory_clock       3 TMUs
+5 gpu_type                                4 cores
+6 processor_size     memory
+7 transistors        ------
+8 die_size           1 chip_id   P Fmem
+9 foudry             2 memory_type
+10 added_date        3 memory_bus
+                     4 bandwidth
+
+SCIENTISTS
+----------              RAW_MATERIAL_STOCK        COMPANIES
+                        ------------------        ---------
+1 ID   P                1 ID  P F                 1 name   
+2 name                  2 batch_ID  P             2 number 
+3 number                3 name                    3 email
+4 email                 4 quantity                4 PAN_NUMBER  P
+5 degree                                          5 sector
+6 address               LABOUR
+7 DOB                   ------
+                        1 ID   P
+CUSTOMER                2 name                                       
+--------                3 number                TABLES              |-- CLOCK_SPEEDS
+1 name                  4 division              ------              |
+2 address               5 address               1  GPU_CHIPS -------|-- MEMORY
+3 number                6 email                 2  SCIENTISTS       |
+4 email                                         3  CUSTOMERS        |-- RENDER_CONFIG
+5 PAN_NUMBER  P         MACHINERY               4  RAW_MATERIAL
+                        ---------               5  PRODUCT_STOCK
+PRODUCT_STOCK           1 ID  P                 6  RAW_MATERIAL_STOCK
+-------------           2 name                  7  LABOUR
+1 batch_ID   P          3 use                   8  MACHINERY ---
+2 chip_ID    P F                                9  PATNERSHIP
+3 name                  PLATFORMS               10 ADVERTISEMENT
+4 net_quantity          ---------               11 INVENTION
+5 defect_quantity       1 name  P               12 ORDERS
+6 quantity_produced                             13 CANCELLED_ORDER
+7 date                                          14 DISTRIBUTION
+RAW_MATERIAL                                    15 PRODUCTION_RAWMATERIALS
+------------                                    16 PRODUCTION_LABOUR
+1 ID  P                                         17 PRODCUTION_MACHINERY
+2 name
+
+
+INVENTION
+---------
+1 ID 
+2 SCIENTIST.ID  F P
+3 GPU_CHIPS.chip_ID  F P
+4 GPU_CHIPS.name  F
+5 date
+6 invention_place
+7 SCIENTIST.name  F
+
+ADVERTISEMENTS
+--------------
+1 ID P 
+2 platform_name 
+3 GPU_CHIPS.chip_ID F
+4 GPU_CHIPS.name F
+
+PATNERSHIPS
+-----------
+1 ID 
+2 GPU_CHIPS.chip_ID P F
+3 company_name
+4 company_number
+5 company_email
+6 company_PAN_NUMBER P F
+7 company_address
+
+ORDERS
+------
+1 ID 
+2 GPU_CHIPS.ID P F
+3 GPU_CHIPS.name 
+4 customer.name 
+5 customer.PAN_NUMBER P F
+6 QUANTITY
+7 status
+8 date
+
+CANCELED_ORDERS
+-------------
+1 ID 
+2 ORDER_ID P f
+3 date
+4 GPU_CHIPS.chip_ID P F
+5 customer.PAN_NUMBER P F
+6 customer.name
+
+DISTRIBUTION
+------------
+1 ID P
+2 ORDER_ID F
+3 date
+4 GPU_CHIPS.chip_ID
+5 customer.PAN_NUMBER
+6 customer.name
+
+PRODUCTION_RAWMATERIALS
+-----------------------
+1 ID 
+2 batch_ID P F
+3 RAWMATERIAL.name F
+4 RAWMATERIAL.ID P F
+5 date F
+
+PRODUCTION_MACHINERY
+--------------------
+1 ID
+2 batch_ID P F
+3 machinery.name F
+4 MACHINERY.ID P F
+5 date F
+
+PRODUCTION_LABOUR
+-----------------
+1 ID
+2 batch_ID P F
+3 LABOUR.ID P F
+4 LABOUR.name F
+5 date F
+
+
+
+  
