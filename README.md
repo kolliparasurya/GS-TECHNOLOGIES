@@ -9,9 +9,7 @@
 <h1 align="center">GS TECHNOLOGIES</h1>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    
   </p>
 </div>
 
