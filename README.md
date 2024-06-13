@@ -6,7 +6,7 @@
   </a>
   -->
 
-<h3 align="center">#GS TECHNOLOGIES</h3>
+<h1 align="center">GS TECHNOLOGIES</h1>
 
   <p align="center">
     project_description
